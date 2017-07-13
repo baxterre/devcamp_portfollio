@@ -23,7 +23,7 @@ class PortfoliosController < ApplicationController
       end
     end
   end
-
+  
   def edit
     @portfolio_item = Portfolio.find(params[:id])
   end
@@ -56,5 +56,4 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
-
 end
