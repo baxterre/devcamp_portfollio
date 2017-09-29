@@ -1,14 +1,64 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "Jwjjeocivybt.jpg", width: 300, alt: "profile image" %>
-  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "Jwjjeocivybt.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+      </div>
 
-  <div class="col-md-8">
-    <p>My full name is Rex Jaxxon Baxter, I am 16 years old and I live in ogden Utah. I am currently enrolled at weber innovation high school and working at getting my associates degree by the time I have graduated high school. My favorite hobbies include programming and golfing, infact I am currently playing golf for Bonneville high school. Currently I am only a novice at programming but I am undergoing courses to further my skills so that I can one day become a proffesional developer. If you have any questions or concerns for me please dont hesitate to click the link above to contact me in whatever way you see fit and I will respond as soon as I can, thank you!</p>
+      <div class="col-md-8">
+        <p>My full name is Rex Jaxxon Baxter, I am 16 years old and I live in ogden Utah. I am currently enrolled at weber innovation high school and working at getting my associates degree by the time I have graduated high school. My favorite hobbies include programming and golfing, infact I am currently playing golf for Bonneville high school. Currently I am only a novice at programming but I am undergoing courses to further my skills so that I can one day become a proffesional developer. If you have any questions or concerns for me please dont hesitate to click the link above to contact me in whatever way you see fit and I will respond as soon as I can, thank you!</p>
 
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+            <div class="card card-block">
+              School 3
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
